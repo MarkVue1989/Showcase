@@ -42,7 +42,7 @@
             </ul>
         </div>
     </div>
-    <div>
+    <div class="content">
         <router-view />
     </div>
 </template>
@@ -125,7 +125,7 @@ const setShowMenu = (b?: boolean) => {
 }
 
 const setSelectedMenu = (index: number, b?: boolean) => {
-    clearSelectedMenu()
+    //clearSelectedMenu()
     if (b !== undefined) {
         selectedMenu.value[index] = b
     }
@@ -261,5 +261,10 @@ div .option h4.selected {
 .subOption {
     margin-left: 2.5rem;
     position: relative;
+}
+
+.content {
+    padding-top: 3rem;
+    padding-left: 15rem;
 }
 </style>
